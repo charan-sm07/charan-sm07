@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="100%" height="100%" style="border-radius: 12px; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040814" />
+      <stop offset="60%" stop-color="#090F26" />
+      <stop offset="100%" stop-color="#0A192F" />
+    </linearGradient>
+
+    <!-- Text Neon Gradient -->
+    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="100%" stop-color="#4FACFE" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00F2FE" stroke-width="1" opacity="0.05" />
+    </pattern>
+
+    <!-- Neon Glow Filter -->
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Subtle Glow Filter -->
+    <filter id="subtle-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1000" height="340" fill="url(#bg-gradient)" rx="12" />
+  
+  <!-- Grid Overlay -->
+  <rect width="1000" height="340" fill="url(#grid)" rx="12" />
+
+  <!-- Decorative Circuit Wave / Connections -->
+  <g opacity="0.25">
+    <path d="M-50,220 C100,180 180,300 350,250 C500,210 650,290 800,220 C900,180 980,240 1050,210" fill="none" stroke="#00F2FE" stroke-width="2" />
+    <path d="M-50,230 C80,200 150,280 320,240 C480,200 620,270 780,200 C880,160 950,220 1050,190" fill="none" stroke="#4FACFE" stroke-width="1" stroke-dasharray="5 5" />
+    
+    <!-- Pulse Nodes -->
+    <circle cx="350" cy="250" r="4" fill="#00F2FE" filter="url(#subtle-glow)" />
+    <circle cx="780" cy="200" r="3" fill="#4FACFE" filter="url(#subtle-glow)" />
+  </g>
+
+  <!-- Terminal Dashboard Box (Right Side) -->
+  <g transform="translate(620, 45)">
+    <!-- Terminal Border and Shadow -->
+    <rect width="330" height="250" rx="10" fill="#030712" stroke="#1F2937" stroke-width="1.5" />
+    <rect width="330" height="250" rx="10" fill="none" stroke="#00F2FE" stroke-width="1.5" opacity="0.3" filter="url(#subtle-glow)" />
+    
+    <!-- Top Terminal Bar -->
+    <rect width="330" height="30" rx="10" fill="#111827" />
+    <rect x="0" y="20" width="330" height="10" fill="#111827" />
+    
+    <!-- Window Control Buttons -->
+    <circle cx="20" cy="15" r="5" fill="#EF4444" />
+    <circle cx="36" cy="15" r="5" fill="#F59E0B" />
+    <circle cx="52" cy="15" r="5" fill="#10B981" />
+    
+    <!-- Terminal Title -->
+    <text x="165" y="20" fill="#9CA3AF" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="1">charan.js</text>
+
+    <!-- Terminal Code / Output -->
+    <g font-family="Consolas, Monaco, 'Courier New', monospace" font-size="12" fill="#E5E7EB" xml:space="preserve">
+      <text x="20" y="65" fill="#6B7280">$ <tspan fill="#38BDF8">node</tspan> developer.js</text>
+      
+      <text x="20" y="95" fill="#10B981">✓ Service initialized successfully</text>
+      
+      <!-- System Specs -->
+      <text x="20" y="125" fill="#9CA3AF">System Info:</text>
+      <text x="35" y="145" fill="#38BDF8">● <tspan fill="#E5E7EB">Language:</tspan> <tspan fill="#F59E0B">Java &amp; JS</tspan></text>
+      <text x="35" y="165" fill="#38BDF8">● <tspan fill="#E5E7EB">Database:</tspan> <tspan fill="#F59E0B">MongoDB &amp; SQL</tspan></text>
+      <text x="35" y="185" fill="#38BDF8">● <tspan fill="#E5E7EB">Status:</tspan> <tspan fill="#F59E0B">Active Learner</tspan></text>
+      
+      <!-- Blinking Cursor -->
+      <text x="20" y="215" fill="#38BDF8">&gt; Ready...<tspan fill="#00F2FE" opacity="0.8" filter="url(#subtle-glow)">█</tspan></text>
+    </g>
+  </g>
+
+  <!-- Left Side: Title and Subtitles -->
+  <g transform="translate(60, 0)">
+    <!-- Floating Tech Icon Details (Java & JS abstract representation) -->
+    <g transform="translate(0, 75)" fill="#00F2FE" opacity="0.8">
+      <rect x="0" y="0" width="8" height="8" rx="1.5" />
+      <rect x="14" y="0" width="8" height="8" rx="1.5" />
+      <rect x="0" y="14" width="8" height="8" rx="1.5" />
+      <circle cx="18" cy="18" r="4" fill="#4FACFE" />
+    </g>
+    
+    <!-- Developer Name -->
+    <text x="32" y="90" font-size="52" font-weight="800" fill="url(#text-gradient)" filter="url(#neon-glow)" letter-spacing="1">CHARAN SM</text>
+    
+    <!-- Neon Separator Line -->
+    <line x1="0" y1="120" x2="480" y2="120" stroke="#00F2FE" stroke-width="3" stroke-linecap="round" filter="url(#subtle-glow)" />
+    <line x1="0" y1="120" x2="480" y2="120" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" opacity="0.9" />
+
+    <!-- Main Title -->
+    <text x="0" y="165" font-size="20" font-weight="700" fill="#E2E8F0" letter-spacing="2">SOFTWARE DEVELOPER</text>
+    
+    <!-- Sub-specialties -->
+    <text x="0" y="200" font-size="15" font-weight="600" fill="#8892B0" letter-spacing="1.5">
+      JAVA DEVELOPER <tspan fill="#00F2FE">|</tspan> BACKEND DEVELOPMENT
+    </text>
+
+    <!-- Small Code Snippet / Decorative -->
+    <text x="0" y="250" font-family="Consolas, Monaco, 'Courier New', monospace" font-size="13" fill="#00F2FE" opacity="0.65">
+      const <tspan fill="#4FACFE">skills</tspan> = [ "Java", "JavaScript", "SQL", "Node.js" ];
+    </text>
+    
+    <!-- Social Connection Prompt -->
+    <g transform="translate(0, 275)" opacity="0.75">
+      <circle cx="6" cy="6" r="4" fill="#10B981" filter="url(#subtle-glow)" />
+      <text x="18" y="10" font-size="11" font-weight="600" fill="#9CA3AF" letter-spacing="0.5">OPEN TO OPPORTUNITIES &amp; COLLABORATION</text>
+    </g>
+  </g>
+</svg>
