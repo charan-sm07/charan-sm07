@@ -26,7 +26,7 @@
   <br/><br/>
   
   <!-- 5. Visitor Counter -->
-  <img src="https://komarev.com/personal-badge/?username=charan-sm07&amp;style=flat-square&amp;color=38bdf8&amp;label=PROFILE+VIEWS" alt="Visitor Counter" />
+  <img src="https://komarev.com/ghpvc/?username=charan-sm07&amp;style=flat-square&amp;color=38bdf8&amp;label=PROFILE+VIEWS" alt="Visitor Counter" />
 </div>
 
 <!-- 
@@ -182,7 +182,7 @@ I regularly practice data structures and algorithms to sharpen my programming lo
   <tr>
     <td colspan="2">
       <br/>
-      <img src="https://streak-stats.demolab.com/?user=charan-sm07&amp;theme=transparent&amp;background=0d1117&amp;border=30363d&amp;stroke=38bdf8&amp;ring=38bdf8&amp;fire=38bdf8&amp;currStreakNum=e2e8f0&amp;sideNums=e2e8f0&amp;sideLabels=e2e8f0&amp;dates=e2e8f0" width="100%" alt="GitHub Streak" />
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=charan-sm07&amp;theme=transparent&amp;background=0d1117&amp;border=30363d&amp;stroke=38bdf8&amp;ring=38bdf8&amp;fire=38bdf8&amp;currStreakNum=e2e8f0&amp;sideNums=e2e8f0&amp;sideLabels=e2e8f0&amp;dates=e2e8f0" width="100%" alt="GitHub Streak" />
     </td>
   </tr>
 
